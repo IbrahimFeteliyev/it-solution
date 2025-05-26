@@ -1,0 +1,399 @@
+/* Variables */
+:root {
+    --primary-color: #2563eb;
+    --secondary-color: #1e40af;
+    --text-color: #1f2937;
+    --light-bg: #f3f4f6;
+    --white: #ffffff;
+    --gradient-start: #2563eb;
+    --gradient-end: #1e40af;
+}
+
+/* General Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-color);
+    padding-top: 66px;
+}
+
+/* Header */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(10px);
+}
+
+.navbar .nav-link {
+    color: var(--text-color);
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: var(--primary-color);
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('/media/introduction.webp') center/cover;
+    opacity: 0.2;
+}
+
+.hero h1 {
+    margin-bottom: 1.5rem;
+    font-weight: 800;
+}
+
+.hero .btn-primary {
+    background-color: var(--white);
+    color: var(--primary-color);
+    border: none;
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.hero .btn-primary:hover {
+    background-color: #e6e6e6;
+    transform: translateY(-2px);
+}
+
+.hero .btn-outline-light {
+    border-width: 2px;
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.hero .btn-outline-light:hover {
+    transform: translateY(-2px);
+}
+
+/* Stats Section */
+.stats-section {
+    background: var(--white);
+    position: relative;
+    z-index: 1;
+    margin-top: -50px;
+}
+
+.stat-card {
+    padding: 2rem;
+    border-radius: 10px;
+    background: var(--white);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.stat-card i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.stat-card h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.stat-card p {
+    color: var(--text-color);
+    margin-bottom: 0;
+}
+
+/* Solution Cards */
+.solution-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    text-align: center;
+    height: 100%;
+}
+
+.solution-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.solution-card i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+
+.solution-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+/* Learn More Button Styles */
+.btn-link {
+    color: var(--primary-color) !important;
+    text-decoration: none !important;
+    padding: 0.5rem 1rem !important;
+    font-weight: 500 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 0.5rem !important;
+    transition: all 0.3s ease !important;
+    border: none !important;
+    background: none !important;
+}
+
+.btn-link:hover {
+    color: var(--secondary-color) !important;
+    transform: translateX(5px) !important;
+}
+
+.btn-link i {
+    font-size: 1rem !important;
+    transition: transform 0.3s ease !important;
+}
+
+.btn-link:hover i {
+    transform: translateX(5px) !important;
+}
+
+/* Service Cards */
+.service-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    text-align: center;
+    height: 100%;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.service-card i {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+}
+
+/* Testimonials Section */
+.testimonial-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+.testimonial-card .testimonial-content {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.testimonial-card .testimonial-content i {
+    font-size: 2rem;
+    color: var(--primary-color);
+    opacity: 0.2;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+}
+
+.testimonial-card .testimonial-content p {
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+.testimonial-card .testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.testimonial-card .testimonial-author img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.testimonial-card .testimonial-author h4 {
+    margin-bottom: 0.25rem;
+    font-size: 1.1rem;
+}
+
+.testimonial-card .testimonial-author p {
+    margin-bottom: 0;
+    color: #6b7280;
+    font-size: 0.9rem;
+}
+
+/* Partners Section */
+.partner-logo {
+    max-height: 80px;
+    filter: grayscale(100%);
+    opacity: 0.7;
+    transition: all 0.3s ease;
+    padding: 1rem;
+}
+
+.partner-logo:hover {
+    filter: grayscale(0);
+    opacity: 1;
+}
+
+/* Contact Section */
+.contact-card {
+    background: var(--white);
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-card .contact-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact-card .contact-info p {
+    color: #6b7280;
+    margin-bottom: 2rem;
+}
+
+.contact-card .contact-details .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.contact-card .contact-details .contact-item i {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.contact-card .contact-details .contact-item span {
+    color: var(--text-color);
+}
+
+.contact-card .form-control {
+    padding: 0.75rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+}
+
+.contact-card .form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.contact-card .btn-primary {
+    padding: 0.75rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.contact-card .btn-primary:hover {
+    transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+    background: #1f2937;
+}
+
+footer a {
+    color: var(--white);
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+footer a:hover {
+    opacity: 0.8;
+}
+
+footer .social-links a {
+    font-size: 1.5rem;
+}
+
+footer hr {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        padding: 60px 0;
+        text-align: center;
+    }
+
+    .hero .btn {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .stats-section {
+        margin-top: 0;
+    }
+
+    .solution-card,
+    .service-card,
+    .testimonial-card {
+        margin-bottom: 1.5rem;
+    }
+
+    .contact-card {
+        padding: 2rem;
+    }
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.solution-card,
+.service-card,
+.testimonial-card {
+    animation: fadeIn 0.5s ease-out;
+}
+
+.solution-card, .service-card, .testimonial-card, .stat-card, .contact-card {
+    box-shadow: 0 8px 32px 0 rgba(37,99,235,0.18), 0 1.5px 8px 0 rgba(0,0,0,0.10);
+    border-radius: 1.25rem;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+.solution-card:hover, .service-card:hover, .testimonial-card:hover, .stat-card:hover, .contact-card:hover {
+    box-shadow: 0 16px 48px 0 rgba(37,99,235,0.28), 0 3px 16px 0 rgba(0,0,0,0.13);
+    transform: translateY(-6px) scale(1.03);
+}
+.partner-logo {
+    border-radius: 1.25rem;
+}
