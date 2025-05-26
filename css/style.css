@@ -580,7 +580,6 @@ footer .contact-item:hover i {
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero {
-        padding: 60px 0;
         text-align: center;
     }
 
