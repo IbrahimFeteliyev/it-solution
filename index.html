@@ -1,391 +1,683 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IT Solutions</title>
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <!-- Remix Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <!-- Swiper CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Poppins:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!-- Header -->
     <header class="fixed-top">
-        <nav class="navbar navbar-expand-lg navbar-light bg-white">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="media/Solutions_by_STC_logo.svg" alt="Company Logo" height="40">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#solutions">Solutions</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#services">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#testimonials">Testimonials</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#partners">Partners</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown">
-                                <i class="fas fa-globe"></i> EN
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#" data-lang="en">English</a></li>
-                                <li><a class="dropdown-item" href="#" data-lang="az">Azerbaijani</a></li>
-                                <li><a class="dropdown-item" href="#" data-lang="ru">Russian</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img
+              src="media/Solutions_by_STC_logo.svg"
+              alt="Company Logo"
+              height="40"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#about" data-i18n="nav.about"
+                  >About Us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#solutions" data-i18n="nav.solutions"
+                  >Solutions</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services" data-i18n="nav.services"
+                  >Services</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#testimonials"
+                  data-i18n="nav.testimonials"
+                  >Testimonials</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#partners" data-i18n="nav.partners"
+                  >Partners</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact" data-i18n="nav.contact"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+            <div class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="languageDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                EN
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li>
+                  <a class="dropdown-item" href="#" data-lang="en">English</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#" data-lang="az"
+                    >Azerbaijani</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#" data-lang="ru">Russian</a>
+                </li>
+              </ul>
             </div>
-        </nav>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-overlay"></div>
-        <div class="container position-relative">
-            <div class="row align-items-center min-vh-100">
-                <div class="col-lg-6">
-                    <h1 class="display-4 fw-bold" data-i18n="hero.title">Innovative IT Solutions for Your Business</h1>
-                    <p class="lead" data-i18n="hero.subtitle">Transform your business with cutting-edge technology solutions</p>
-                    <div class="d-flex gap-3">
-                        <a href="#contact" class="btn btn-primary btn-lg">Get Started</a>
-                        <a href="#solutions" class="btn btn-outline-light btn-lg">Learn More</a>
-                    </div>
-                </div>
-                <div class="col-lg-6 d-none d-lg-block">
-                    <img src="media/group-young-business-people-working-office_158595-5210.avif" alt="Hero Image" class="img-fluid rounded-3 shadow-lg">
-                </div>
+      <div class="hero-overlay"></div>
+      <div class="container position-relative">
+        <div class="d-flex align-items-center min-vh-100">
+          <div class="col-lg-7">
+            <h1 class="display-4 fw-bold" data-i18n="hero.title">
+              Innovative IT Solutions for Your Business
+            </h1>
+            <p class="lead" data-i18n="hero.subtitle">
+              Transform your business with cutting-edge technology solutions
+            </p>
+            <div class="d-flex gap-3">
+              <a
+                href="#contact"
+                class="btn btn-primary btn-lg"
+                data-i18n="hero.getStarted"
+                >Get Started</a
+              >
+              <a
+                href="#solutions"
+                class="btn btn-outline-light btn-lg"
+                data-i18n="hero.learnMore"
+                >Learn More</a
+              >
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- Stats Section -->
-    <!-- <section class="stats-section py-5">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-md-3 col-6">
-                    <div class="stat-card text-center">
-                        <i class="ri-user-line"></i>
-                        <h3 class="counter">500+</h3>
-                        <p>Happy Clients</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <div class="stat-card text-center">
-                        <i class="ri-projector-line"></i>
-                        <h3 class="counter">1000+</h3>
-                        <p>Projects Completed</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <div class="stat-card text-center">
-                        <i class="ri-team-line"></i>
-                        <h3 class="counter">50+</h3>
-                        <p>Team Members</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <div class="stat-card text-center">
-                        <i class="ri-award-line"></i>
-                        <h3 class="counter">25+</h3>
-                        <p>Awards Won</p>
-                    </div>
-                </div>
-            </div>
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light-2">
+      <div class="container">
+        <div class="section-title">
+          <h2 data-i18n="about.title">About Us</h2>
+          <p data-i18n="about.subtitle">
+            We are a leading IT solutions provider dedicated to transforming
+            businesses through innovative technology.
+          </p>
         </div>
-    </section> -->
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <img
+              src="media/group-young-business-people-working-office_158595-5210.avif"
+              alt="About Us"
+              class="img-fluid rounded-3 shadow-lg"
+            />
+          </div>
+          <div class="col-lg-6">
+            <p class="mb-4" data-i18n="about.description">
+              With over a decade of experience in the industry, we have helped
+              numerous organizations achieve their digital transformation goals.
+              Our team of experts combines technical expertise with business
+              acumen to deliver solutions that drive growth and efficiency.
+            </p>
+            <div class="row g-4">
+              <div class="col-md-6">
+                <div class="about-feature">
+                  <i class="ri-checkbox-circle-line"></i>
+                  <span data-i18n="about.feature1">Expert Team</span>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="about-feature">
+                  <i class="ri-checkbox-circle-line"></i>
+                  <span data-i18n="about.feature2">Quality Service</span>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="about-feature">
+                  <i class="ri-checkbox-circle-line"></i>
+                  <span data-i18n="about.feature3">24/7 Support</span>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="about-feature">
+                  <i class="ri-checkbox-circle-line"></i>
+                  <span data-i18n="about.feature4">Innovative Solutions</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Solutions Section -->
-    <section id="solutions" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-5" data-i18n="solutions.title">Our Solutions</h2>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="solution-card">
-                        <i class="ri-line-chart-line"></i>
-                        <h3 data-i18n="solutions.bi">BI & Analytics</h3>
-                        <p data-i18n="solutions.bi-desc">Transform your data into actionable insights</p>
-                        <a href="#" class="btn btn-link">Learn More <i class="ri-arrow-right-line"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="solution-card">
-                        <i class="ri-shield-check-line"></i>
-                        <h3 data-i18n="solutions.cybersecurity">Cybersecurity</h3>
-                        <p data-i18n="solutions.cybersecurity-desc">Protect your digital assets</p>
-                        <a href="#" class="btn btn-link">Learn More <i class="ri-arrow-right-line"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="solution-card">
-                        <i class="ri-team-line"></i>
-                        <h3 data-i18n="solutions.collaboration">Collaboration</h3>
-                        <p data-i18n="solutions.collaboration-desc">Enhance team productivity</p>
-                        <a href="#" class="btn btn-link">Learn More <i class="ri-arrow-right-line"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="solution-card">
-                        <i class="ri-database-2-line"></i>
-                        <h3>Data Center & Virtualization</h3>
-                        <p>Optimize your infrastructure with modern solutions</p>
-                        <a href="#" class="btn btn-link">Learn More <i class="ri-arrow-right-line"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="solution-card">
-                        <i class="ri-file-list-3-line"></i>
-                        <h3>ERP/CRM & Document Workflow</h3>
-                        <p>Streamline your business processes</p>
-                        <a href="#" class="btn btn-link">Learn More <i class="ri-arrow-right-line"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="solution-card">
-                        <i class="ri-global-line"></i>
-                        <h3>Network Infrastructure</h3>
-                        <p>Build a robust and scalable network</p>
-                        <a href="#" class="btn btn-link">Learn More <i class="ri-arrow-right-line"></i></a>
-                    </div>
-                </div>
-            </div>
+    <section id="solutions" class="py-5 bg-light-1">
+      <div class="container">
+        <div class="section-title">
+          <h2 data-i18n="solutions.title">Our Solutions</h2>
+          <p data-i18n="solutions.subtitle">
+            Comprehensive IT solutions designed to meet your business needs and
+            drive growth.
+          </p>
         </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="solution-card">
+              <i class="ri-database-2-line"></i>
+              <h3 data-i18n="solutions.dataCenter">Data Center Solutions</h3>
+              <p data-i18n="solutions.dataCenterDesc">
+                Complete data center infrastructure including server rooms,
+                cooling systems, and power supply solutions
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="solution-card">
+              <i class="ri-shield-check-line"></i>
+              <h3 data-i18n="solutions.cybersecurity">
+                Cybersecurity Solutions
+              </h3>
+              <p data-i18n="solutions.cybersecurityDesc">
+                Comprehensive corporate IT security solutions including network
+                security and infrastructure protection
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="solution-card">
+              <i class="ri-router-line"></i>
+              <h3 data-i18n="solutions.network">Network Solutions</h3>
+              <p data-i18n="solutions.networkDesc">
+                Advanced network infrastructure and structured cabling systems
+                for optimal connectivity
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="solution-card">
+              <i class="ri-camera-line"></i>
+              <h3 data-i18n="solutions.security">Security Infrastructure</h3>
+              <p data-i18n="solutions.securityDesc">
+                Professional security camera systems and surveillance solutions
+                for comprehensive monitoring
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="solution-card">
+              <i class="ri-code-s-slash-line"></i>
+              <h3 data-i18n="solutions.software">Software Solutions</h3>
+              <p data-i18n="solutions.softwareDesc">
+                Custom application and software development for business process
+                automation
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="solution-card">
+              <i class="ri-video-line"></i>
+              <h3 data-i18n="solutions.av">Audio & Video Solutions</h3>
+              <p data-i18n="solutions.avDesc">
+                Professional audio-visual systems and video conferencing
+                solutions
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center mb-5" data-i18n="services.title">Our Services</h2>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="service-card">
-                        <i class="ri-code-s-slash-line"></i>
-                        <h3 data-i18n="services.software">Software Development</h3>
-                        <p data-i18n="services.software-desc">Custom software solutions for your business</p>
-                        <a href="#" class="btn btn-link">Learn More <i class="ri-arrow-right-line"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="service-card">
-                        <i class="ri-customer-service-2-line"></i>
-                        <h3 data-i18n="services.consulting">Consulting Services</h3>
-                        <p data-i18n="services.consulting-desc">Expert guidance for your IT needs</p>
-                        <a href="#" class="btn btn-link">Learn More <i class="ri-arrow-right-line"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="service-card">
-                        <i class="ri-refresh-line"></i>
-                        <h3 data-i18n="services.digital">Digital Transformation</h3>
-                        <p data-i18n="services.digital-desc">Modernize your business processes</p>
-                        <a href="#" class="btn btn-link">Learn More <i class="ri-arrow-right-line"></i></a>
-                    </div>
-                </div>
-            </div>
+    <section id="services" class="py-5 bg-light-2">
+      <div class="container">
+        <div class="section-title">
+          <h2 data-i18n="services.title">Our Services</h2>
+          <p data-i18n="services.subtitle">
+            Professional IT services to help your business thrive in the digital
+            age.
+          </p>
         </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="service-card">
+              <i class="ri-settings-4-line"></i>
+              <h3 data-i18n="services.integration">System Integration</h3>
+              <p data-i18n="services.integrationDesc">
+                End-to-end system integration services for seamless business
+                process automation
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-card">
+              <i class="ri-customer-service-2-line"></i>
+              <h3 data-i18n="services.support">IT Support</h3>
+              <p data-i18n="services.supportDesc">
+                24/7 technical support and IT management systems implementation
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-card">
+              <i class="ri-cloud-line"></i>
+              <h3 data-i18n="services.cloud">Cloud Solutions</h3>
+              <p data-i18n="services.cloudDesc">
+                Cloud technology implementation and management for modern
+                businesses
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Testimonials Section -->
-    <section id="testimonials" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-5">What Our Clients Say</h2>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="testimonial-card">
-                        <div class="testimonial-content">
-                            <i class="ri-double-quotes-l"></i>
-                            <p>"Working with this team has transformed our business operations. Their expertise in IT solutions is unmatched."</p>
-                        </div>
-                        <div class="testimonial-author">
-                            <img src="https://placehold.co/100x100/2563eb/ffffff?text=JD" alt="John Doe" class="rounded-circle">
-                            <div>
-                                <h4>John Doe</h4>
-                                <p>CEO, TechCorp</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="testimonial-card">
-                        <div class="testimonial-content">
-                            <i class="ri-double-quotes-l"></i>
-                            <p>"The cybersecurity solutions provided have significantly improved our data protection. Highly recommended!"</p>
-                        </div>
-                        <div class="testimonial-author">
-                            <img src="https://placehold.co/100x100/2563eb/ffffff?text=JS" alt="Jane Smith" class="rounded-circle">
-                            <div>
-                                <h4>Jane Smith</h4>
-                                <p>CTO, SecureTech</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="testimonial-card">
-                        <div class="testimonial-content">
-                            <i class="ri-double-quotes-l"></i>
-                            <p>"Their digital transformation services helped us modernize our infrastructure and improve efficiency."</p>
-                        </div>
-                        <div class="testimonial-author">
-                            <img src="https://placehold.co/100x100/2563eb/ffffff?text=MR" alt="Mike Ross" class="rounded-circle">
-                            <div>
-                                <h4>Mike Ross</h4>
-                                <p>Director, InnovateCo</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section id="testimonials" class="py-5 bg-light-1">
+      <div class="container">
+        <div class="section-title">
+          <h2 data-i18n="testimonials.title">What Our Clients Say</h2>
+          <p data-i18n="testimonials.subtitle">
+            Hear from our satisfied clients about their experience working with
+            us.
+          </p>
         </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <i class="ri-double-quotes-l"></i>
+                <p data-i18n="testimonials.testimonial1">
+                  "Working with this team has transformed our business
+                  operations. Their expertise in IT solutions is unmatched."
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <img
+                  src="https://placehold.co/100x100/2563eb/ffffff?text=JD"
+                  alt="John Doe"
+                  class="rounded-circle"
+                />
+                <div>
+                  <h4>John Doe</h4>
+                  <p>CEO, TechCorp</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <i class="ri-double-quotes-l"></i>
+                <p data-i18n="testimonials.testimonial2">
+                  "The cybersecurity solutions provided have significantly
+                  improved our data protection. Highly recommended!"
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <img
+                  src="https://placehold.co/100x100/2563eb/ffffff?text=JS"
+                  alt="Jane Smith"
+                  class="rounded-circle"
+                />
+                <div>
+                  <h4>Jane Smith</h4>
+                  <p>CTO, SecureTech</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <i class="ri-double-quotes-l"></i>
+                <p data-i18n="testimonials.testimonial3">
+                  "Their digital transformation services helped us modernize our
+                  infrastructure and improve efficiency."
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <img
+                  src="https://placehold.co/100x100/2563eb/ffffff?text=MR"
+                  alt="Mike Ross"
+                  class="rounded-circle"
+                />
+                <div>
+                  <h4>Mike Ross</h4>
+                  <p>Director, InnovateCo</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Partners Section -->
-    <section id="partners" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center mb-5" data-i18n="partners.title">Our Partners</h2>
-            <div class="swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide text-center"><img src="media/p1.png" alt="Partner 1" class="img-fluid partner-logo"></div>
-                    <div class="swiper-slide text-center"><img src="media/p2.png" alt="Partner 2" class="img-fluid partner-logo"></div>
-                    <div class="swiper-slide text-center"><img src="media/p3.png" alt="Partner 3" class="img-fluid partner-logo"></div>
-                    <div class="swiper-slide text-center"><img src="media/p4.png" alt="Partner 4" class="img-fluid partner-logo"></div>
-                    <div class="swiper-slide text-center"><img src="media/p5.png" alt="Partner 5" class="img-fluid partner-logo"></div>
-                    <div class="swiper-slide text-center"><img src="media/p6.png" alt="Partner 6" class="img-fluid partner-logo"></div>
-                    <div class="swiper-slide text-center"><img src="media/p7.png" alt="Partner 7" class="img-fluid partner-logo"></div>
-                    <div class="swiper-slide text-center"><img src="media/p8.png" alt="Partner 8" class="img-fluid partner-logo"></div>
-                    <div class="swiper-slide text-center"><img src="media/p9.png" alt="Partner 9" class="img-fluid partner-logo"></div>
-                    <div class="swiper-slide text-center"><img src="media/p10.png" alt="Partner 10" class="img-fluid partner-logo"></div>
-                </div>
-            </div>
+    <section id="partners" class="py-5 bg-light-2">
+      <div class="container">
+        <div class="section-title">
+          <h2 data-i18n="partners.title">Our Partners</h2>
+          <p data-i18n="partners.subtitle">
+            Trusted by leading technology partners worldwide.
+          </p>
         </div>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide text-center">
+              <img
+                src="media/p1.png"
+                alt="Partner 1"
+                class="img-fluid partner-logo"
+              />
+            </div>
+            <div class="swiper-slide text-center">
+              <img
+                src="media/p2.png"
+                alt="Partner 2"
+                class="img-fluid partner-logo"
+              />
+            </div>
+            <div class="swiper-slide text-center">
+              <img
+                src="media/p3.png"
+                alt="Partner 3"
+                class="img-fluid partner-logo"
+              />
+            </div>
+            <div class="swiper-slide text-center">
+              <img
+                src="media/p4.png"
+                alt="Partner 4"
+                class="img-fluid partner-logo"
+              />
+            </div>
+            <div class="swiper-slide text-center">
+              <img
+                src="media/p5.png"
+                alt="Partner 5"
+                class="img-fluid partner-logo"
+              />
+            </div>
+            <div class="swiper-slide text-center">
+              <img
+                src="media/p6.png"
+                alt="Partner 6"
+                class="img-fluid partner-logo"
+              />
+            </div>
+            <div class="swiper-slide text-center">
+              <img
+                src="media/p7.png"
+                alt="Partner 7"
+                class="img-fluid partner-logo"
+              />
+            </div>
+            <div class="swiper-slide text-center">
+              <img
+                src="media/p8.png"
+                alt="Partner 8"
+                class="img-fluid partner-logo"
+              />
+            </div>
+            <div class="swiper-slide text-center">
+              <img
+                src="media/p9.png"
+                alt="Partner 9"
+                class="img-fluid partner-logo"
+              />
+            </div>
+            <div class="swiper-slide text-center">
+              <img
+                src="media/p10.png"
+                alt="Partner 10"
+                class="img-fluid partner-logo"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-5" data-i18n="contact.title">Contact Us</h2>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="contact-card">
-                        <div class="row g-4">
-                            <div class="col-md-6">
-                                <div class="contact-info">
-                                    <h3>Get in Touch</h3>
-                                    <p>We'd love to hear from you. Please fill out this form or shoot us an email.</p>
-                                    <div class="contact-details">
-                                        <div class="contact-item">
-                                            <i class="ri-map-pin-line"></i>
-                                            <span>123 Business Street, City, Country</span>
-                                        </div>
-                                        <div class="contact-item">
-                                            <i class="ri-mail-line"></i>
-                                            <span>info@itsolutions.com</span>
-                                        </div>
-                                        <div class="contact-item">
-                                            <i class="ri-phone-line"></i>
-                                            <span>+1 234 567 890</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <form id="contactForm">
-                                    <div class="row g-3">
-                                        <div class="col-md-6">
-                                            <input type="text" class="form-control" placeholder="Name" data-i18n-placeholder="contact.name">
-                                        </div>
-                                        <div class="col-md-6">
-                                            <input type="email" class="form-control" placeholder="Email" data-i18n-placeholder="contact.email">
-                                        </div>
-                                        <div class="col-12">
-                                            <input type="text" class="form-control" placeholder="Subject" data-i18n-placeholder="contact.subject">
-                                        </div>
-                                        <div class="col-12">
-                                            <textarea class="form-control" rows="5" placeholder="Message" data-i18n-placeholder="contact.message"></textarea>
-                                        </div>
-                                        <div class="col-12">
-                                            <button type="submit" class="btn btn-primary w-100" data-i18n="contact.submit">Send Message</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section id="contact" class="py-5 bg-light-1">
+      <div class="container">
+        <div class="section-title">
+          <h2 data-i18n="contact.title">Contact Us</h2>
+          <p data-i18n="contact.subtitle">
+            Get in touch with us to discuss how we can help transform your
+            business.
+          </p>
         </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="contact-card">
+              <div class="row g-4">
+                <div class="col-lg-5">
+                  <div class="contact-info">
+                    <h3 class="mb-4" data-i18n="contact.getInTouch">
+                      Get in Touch
+                    </h3>
+                    <p class="mb-4" data-i18n="contact.description">
+                      We'd love to hear from you. Let's discuss how we can help
+                      transform your business.
+                    </p>
+                    <div class="contact-details">
+                      <div class="contact-item">
+                        <i class="ri-mail-line"></i>
+                        <div>
+                          <h5 data-i18n="contact.emailUs">Email Us</h5>
+                          <p>info@itsolutions.com</p>
+                        </div>
+                      </div>
+                      <div class="contact-item">
+                        <i class="ri-phone-line"></i>
+                        <div>
+                          <h5 data-i18n="contact.callUs">Call Us</h5>
+                          <p>+1 234 567 890</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-7">
+                  <form id="contactForm" class="contact-form">
+                    <div class="row g-3">
+                      <div class="col-md-6">
+                        <div class="form-floating">
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="name"
+                            placeholder="Name"
+                            data-i18n="contact.name"
+                          />
+                          <label for="name" data-i18n="contact.name"
+                            >Name</label
+                          >
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-floating">
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="email"
+                            placeholder="Email"
+                            data-i18n="contact.email"
+                          />
+                          <label for="email" data-i18n="contact.email"
+                            >Email</label
+                          >
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-floating">
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="subject"
+                            placeholder="Subject"
+                            data-i18n="contact.subject"
+                          />
+                          <label for="subject" data-i18n="contact.subject"
+                            >Subject</label
+                          >
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-floating">
+                          <textarea
+                            class="form-control"
+                            id="message"
+                            rows="5"
+                            placeholder="Message"
+                            data-i18n="contact.message"
+                          ></textarea>
+                          <label for="message" data-i18n="contact.message"
+                            >Message</label
+                          >
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <button
+                          type="submit"
+                          class="btn btn-primary w-100 py-3"
+                          data-i18n="contact.send"
+                        >
+                          Send Message <i class="ri-send-plane-fill ms-2"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Footer -->
-    <footer class="py-4 bg-dark text-white">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <img src="https://placehold.co/200x50/ffffff/2563eb?text=IT+Solutions" alt="Company Logo" height="40" class="mb-3">
-                    <p>Transforming businesses through innovative technology solutions.</p>
+    <footer class="py-5 bg-dark text-white">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <img
+              src="media/Solutions_by_STC_logo.svg"
+              alt="Company Logo"
+              height="50"
+              class="mb-4"
+            />
+            <p class="mb-0 text-light-emphasis" data-i18n="footer.description">
+              Transforming businesses through innovative technology solutions.
+            </p>
+          </div>
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <div class="contact-info">
+              <div class="contact-item mb-3">
+                <i class="ri-mail-line"></i>
+                <div>
+                  <h5 class="text-white mb-1">Email Us</h5>
+                  <p class="mb-0 text-light-emphasis">info@itsolutions.com</p>
                 </div>
-                <div class="col-md-4">
-                    <h5>Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#solutions">Solutions</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#partners">Partners</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
+              </div>
+              <div class="contact-item">
+                <i class="ri-phone-line"></i>
+                <div>
+                  <h5 class="text-white mb-1">Call Us</h5>
+                  <p class="mb-0 text-light-emphasis">+1 234 567 890</p>
                 </div>
-                <div class="col-md-4">
-                    <h5>Connect With Us</h5>
-                    <div class="social-links">
-                        <a href="#" class="text-white me-3"><i class="ri-facebook-fill"></i></a>
-                        <a href="#" class="text-white me-3"><i class="ri-twitter-fill"></i></a>
-                        <a href="#" class="text-white me-3"><i class="ri-linkedin-fill"></i></a>
-                        <a href="#" class="text-white me-3"><i class="ri-instagram-fill"></i></a>
-                    </div>
-                </div>
+              </div>
             </div>
-            <hr class="my-4">
-            <div class="row">
-                <div class="col-md-6">
-                    <p class="mb-0">&copy; 2024 IT Solutions. All rights reserved.</p>
-                </div>
-                <div class="col-md-6 text-md-end">
-                    <a href="#" class="text-white me-3">Privacy Policy</a>
-                    <a href="#" class="text-white me-3">Terms of Service</a>
-                </div>
+          </div>
+          <div class="col-lg-4 text-lg-end">
+            <div class="footer-social mb-4">
+              <a href="#" class="social-link"
+                ><i class="ri-facebook-fill"></i
+              ></a>
+              <a href="#" class="social-link"
+                ><i class="ri-twitter-fill"></i
+              ></a>
+              <a href="#" class="social-link"
+                ><i class="ri-linkedin-fill"></i
+              ></a>
+              <a href="#" class="social-link"
+                ><i class="ri-instagram-fill"></i
+              ></a>
             </div>
+            <p class="mb-0 text-light-emphasis" data-i18n="footer.copyright">
+              &copy; 2024 IT Solutions. All rights reserved.
+            </p>
+          </div>
         </div>
+      </div>
     </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Translations -->
+    <script src="js/translations.js"></script>
     <!-- Custom JS -->
     <script src="js/main.js"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-      var swiper = new Swiper('.swiper', {
+      var swiper = new Swiper(".swiper", {
         slidesPerView: 2,
         spaceBetween: 30,
         loop: true,
@@ -399,5 +691,5 @@
         },
       });
     </script>
-</body>
-</html> 
+  </body>
+</html>
